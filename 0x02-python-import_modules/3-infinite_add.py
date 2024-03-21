@@ -1,6 +1,11 @@
 #!/usr/bin/python3
-from sys import argv
-add = 0
-for s in argv[1:]:
-    add += int(s)
-print("{:d}".format(add))
+
+import sys
+
+def add_arguments():
+    total = 0
+    for arg in sys.argv[1:]:
+        total += int(arg)
+    print(total)
+
+add_arguments()
